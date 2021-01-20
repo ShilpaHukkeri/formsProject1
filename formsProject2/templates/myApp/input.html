@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h1 style="color: darkblue">Fill Up The Form</h1>
+        <form method="post">
+        {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
